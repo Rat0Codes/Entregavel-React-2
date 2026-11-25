@@ -1,16 +1,64 @@
-# React + Vite
+# Biblioteca UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Biblioteca de componentes reutilizáveis desenvolvida com React, Vite e Tailwind CSS.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O objetivo deste projeto é desenvolver uma pequena biblioteca de componentes de interface (UI), utilizando componentização no React e estilização com Tailwind CSS.
 
-## React Compiler
+Os componentes utilizam props para permitir diferentes variações visuais e facilitar sua reutilização.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- Vite
+- Tailwind CSS v3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Componentes
+
+| Componente | Descrição |
+|---|---|
+| Button | Botões com variantes primary, secondary e danger. |
+| Badge | Indicadores visuais de status. |
+| Input | Campos de entrada de dados. |
+| Card | Contêiner para agrupamento de conteúdo. |
+| Alert | Mensagens com variantes success, error e warning. |
+
+## Instalação e execução
+
+Clone o repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+Entre na pasta:
+
+```bash
+cd biblioteca-ui
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+## Reflexão: Tailwind CSS vs. CSS tradicional
+
+O Tailwind CSS facilita a componentização no React ao permitir que a estilização seja realizada diretamente nos elementos por meio de classes utilitárias. Entre suas vantagens estão a reutilização de estilos, a padronização visual e a redução da necessidade de criar arquivos CSS separados.
+
+Por outro lado, a quantidade de classes diretamente no JSX pode dificultar a leitura do código, especialmente em componentes mais complexos. Além disso, exige familiaridade com suas classes utilitárias.
+
+Concluindo, o Tailwind CSS oferece agilidade e organização na construção de interfaces reutilizáveis, enquanto o CSS tradicional proporciona maior liberdade na escrita e separação das regras de estilização.
+
+## Autor
+
+Rudson
